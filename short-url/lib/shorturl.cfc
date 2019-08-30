@@ -21,14 +21,13 @@ component hint="Helper functions related to urls" {
 	public numeric function readShortID( required string value ) {
 		var alpha = variables.instance.base58;
 		var base = alpha.len();
-		var value = arguments.value.reverse().toCharArray();
 
-		return value.reduce(
-			function( decoeded = 0, value ) {
-				var pos = alpha.find( value );
+		return arguments.value.reverse().toCharArray().reduce(
+			function( decoded = 0, char ) {
+				var pos = alpha.find( char );
 
 				if ( ! pos ) {
-					throw( "The value '#arguments.value#' is not a valid short ID." );
+					throw( "The value '#value#' is not a valid short ID." );
 				}
 
 				return decoded += (
