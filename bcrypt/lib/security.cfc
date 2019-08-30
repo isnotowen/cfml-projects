@@ -30,19 +30,19 @@ component {
 				throw(type="InsufficientLength", message="This method will only generate passwords of 6 characters or greater")
 			}
 
-			password = "";
-			alphabet = "abcdefghijkmnpqrstuvwxyz"; // excludes l and o
+			var password = "";
+			var alphabet = "abcdefghijkmnpqrstuvwxyz"; // excludes l and o
 
 			// double up the alphabet list to get a fairer random distribution
 			alphabet = alphabet & alphabet;
 
-			for(i = 1; i lte 3; i++) {
+			for(var i = 1; i <= 3; i++) {
 				rnd = randrange(1,len(alphabet));
 				password = password & mid(alphabet,rnd,1);
 			}
 
 			// get a number value and pad with zeroes as required
-			rnd = randrange(9999,999999);
+			var rnd = randrange(9999,999999);
 
 			password = password & right(repeatstring("0",arguments.length) & rnd,(arguments.length - len(password)));
 
