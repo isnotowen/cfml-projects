@@ -26,7 +26,7 @@
 		<cfloop array="#policy.getOptions()#" item="option">
 			<dl>
 				<dt>#option.getName().encodeForHTML()#</dt>
-				<dt>#option.getFormattedValue()#</dt>
+				<dd>#option.getFormattedValue()#</dd>
 			</dl>
 		</cfloop>
 
