@@ -5,7 +5,7 @@ component accessors="true" singleton="true" {
 	// Constructor
 	public function init() {
 		// Read in the fake data from JSON & convert to native cfml
-		setData( deserializeJSON( fileRead( "/data/policies.json" ) ) );
+		setData( deserializeJSON( fileRead( expandPath( "data/policies.json" ) ) ) );
 
 		return this;
 	}

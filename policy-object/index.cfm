@@ -34,12 +34,12 @@
 
 		<dl>
 			<dt>Is Homeowner Policy?</dt>
-			<dd>#policy.isType( "Homeowner Policy" ).yesNoFormat()#</dd>
+			<dd>#yesNoFormat( policy.isType( "Homeowner Policy" ) )#</dd>
 		</dl>
 
 		<dl>
 			<dt>Is Auto Policy?</dt>
-			<dd>#policy.isType( "Auto Policy" ).yesNoFormat()#</dd>
+			<dd>#yesNoFormat( policy.isType( "Auto Policy" ) )#</dd>
 		</dl>
 
 		<hr />

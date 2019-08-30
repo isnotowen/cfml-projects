@@ -7,7 +7,7 @@ component accessors="true" transient="true" {
 	public any function getFormattedValue() {
 		switch( getDataType() ) {
 			case "boolean": {
-				return isBoolean( value ) ? getValue().yesNoFormat() : value;
+				return isBoolean( value ) ? yesNoFormat( value ) : value;
 			}
 			case "numeric": {
 				return isNumeric( value ) ?  numberFormat( value ) : value;
