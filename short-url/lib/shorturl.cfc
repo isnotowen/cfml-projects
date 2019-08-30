@@ -23,7 +23,7 @@ component hint="Helper functions related to urls" {
 		var base = alpha.len();
 
 		return arguments.value.reverse().toCharArray().reduce(
-			function( decoded = 0, char ) {
+			function( decoded = 0, char, i ) {
 				var pos = alpha.find( char );
 
 				if ( ! pos ) {
@@ -33,7 +33,7 @@ component hint="Helper functions related to urls" {
 				return decoded += (
 					( pos - 1 )
 					*
-					( base ^ ( x - 1 ) )
+					( base ^ ( i - 1 ) )
 				);
 			}
 		);
