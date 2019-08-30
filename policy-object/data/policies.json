@@ -1,0 +1,74 @@
+[
+	{
+		"policyNumber": "000123-01",
+		"dateEffective": "2019-01-01",
+		"dateExpires": "2019-12-31",
+		"type": {
+			"name": "Homeowner Policy",
+			"description": "I am a HO policy"
+		},
+		"options": [
+			{
+				"name": "Single Family Home",
+				"dataType": "boolean",
+				"value": true
+			},
+			{
+				"name": "Sq Feet",
+				"dataType": "numeric",
+				"value": 2000
+			}
+		]
+	},
+	{
+		"policyNumber": "000230-01",
+		"dateEffective": "2019-02-01",
+		"dateExpires": "2019-07-31",
+		"type": {
+			"name": "Auto Policy",
+			"description": "I am an auto policy"
+		},
+		"options": [
+			{
+				"name": "Vehicles",
+				"dataType": "array",
+				"value": [
+					{
+						"year": 2017,
+						"make": "Lincoln",
+						"model": "MKZ"
+					},
+					{
+						"year": 2019,
+						"make": "Toyota",
+						"model": "4-runner"
+					}
+				]
+			},
+			{
+				"name": "Drivers",
+				"dataType": "array",
+				"value": [
+					{
+						"first": "Owen",
+						"middle": "T",
+						"last": "Knapp",
+						"dob": "1/1/1900"
+					},
+					{
+						"first": "Madison",
+						"middle": "Marie",
+						"last": "Knapp",
+						"dob": "6/29/2006"
+					},
+					{
+						"first": "Cameron",
+						"middle": "Maxwell",
+						"last": "Knapp",
+						"dob": "2/8/2013"
+					}
+				]
+			}
+		]
+	}
+]

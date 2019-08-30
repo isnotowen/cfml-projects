@@ -1,0 +1,1 @@
+Illustrative example of modeling an insurance policy
